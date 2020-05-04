@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200504 11:58:30.930" generator="Robot 3.1.2 (Python 2.7.15 on win32)">
-<suite source="C:\Users\JMENDOZA\PycharmProjects\Exercise_1\Tests\Exercise_1.robot" id="s1" name="Exercise 1">
-<test id="s1-t1" name="TC-001 - LOG IN">
+<robot rpa="false" generated="20200504 15:21:05.711" generator="Robot 3.1.2 (Python 2.7.15 on win32)">
+<suite source="C:\Users\LFLORENDO\Desktop\Exercise_1\Tests\Exercise_1.robot" id="s1" name="Exercise 1">
+<test id="s1-t1" name="TC-001">
 <kw type="setup" name="Open Browser Test Setup" library="Common_Keywords">
 <arguments>
 <arg>https://www.investagrams.com/Login/</arg>
@@ -12,14 +12,14 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20200504 11:58:31.569" level="INFO">Opening browser 'chrome' to base url 'https://www.investagrams.com/Login/'.</msg>
-<status status="PASS" endtime="20200504 11:58:41.870" starttime="20200504 11:58:31.569"></status>
+<msg timestamp="20200504 15:21:06.156" level="INFO">Opening browser 'chrome' to base url 'https://www.investagrams.com/Login/'.</msg>
+<status status="PASS" endtime="20200504 15:21:21.033" starttime="20200504 15:21:06.155"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20200504 11:58:44.031" starttime="20200504 11:58:41.871"></status>
+<status status="PASS" endtime="20200504 15:21:23.177" starttime="20200504 15:21:21.033"></status>
 </kw>
-<status status="PASS" endtime="20200504 11:58:44.032" starttime="20200504 11:58:31.568"></status>
+<status status="PASS" endtime="20200504 15:21:23.178" starttime="20200504 15:21:06.155"></status>
 </kw>
 <kw name="Enter Username" library="Common_Login">
 <arguments>
@@ -30,7 +30,7 @@
 <arguments>
 <arg>xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/div[1]/input</arg>
 </arguments>
-<status status="PASS" endtime="20200504 11:58:44.066" starttime="20200504 11:58:44.034"></status>
+<status status="PASS" endtime="20200504 15:21:23.203" starttime="20200504 15:21:23.182"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -38,10 +38,10 @@
 <arg>xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/div[1]/input</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20200504 11:58:44.067" level="INFO">Typing text 'rueljsaunar@yahoo.com' into text field 'xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/div[1]/input'.</msg>
-<status status="PASS" endtime="20200504 11:58:44.465" starttime="20200504 11:58:44.066"></status>
+<msg timestamp="20200504 15:21:23.208" level="INFO">Typing text 'rueljsaunar@yahoo.com' into text field 'xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/div[1]/input'.</msg>
+<status status="PASS" endtime="20200504 15:21:23.620" starttime="20200504 15:21:23.203"></status>
 </kw>
-<status status="PASS" endtime="20200504 11:58:44.465" starttime="20200504 11:58:44.033"></status>
+<status status="PASS" endtime="20200504 15:21:23.620" starttime="20200504 15:21:23.181"></status>
 </kw>
 <kw name="Enter Password" library="Common_Login">
 <arguments>
@@ -52,7 +52,7 @@
 <arguments>
 <arg>xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/div[2]/div/input</arg>
 </arguments>
-<status status="PASS" endtime="20200504 11:58:44.490" starttime="20200504 11:58:44.467"></status>
+<status status="PASS" endtime="20200504 15:21:23.641" starttime="20200504 15:21:23.620"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into the text field identified by ``locator``.</doc>
@@ -60,18 +60,18 @@
 <arg>xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/div[2]/div/input</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20200504 11:58:44.491" level="INFO">Typing password into text field 'xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/div[2]/div/input'.</msg>
-<status status="PASS" endtime="20200504 11:58:44.796" starttime="20200504 11:58:44.490"></status>
+<msg timestamp="20200504 15:21:23.643" level="INFO">Typing password into text field 'xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/div[2]/div/input'.</msg>
+<status status="PASS" endtime="20200504 15:21:24.064" starttime="20200504 15:21:23.643"></status>
 </kw>
-<status status="PASS" endtime="20200504 11:58:44.796" starttime="20200504 11:58:44.466"></status>
+<status status="PASS" endtime="20200504 15:21:24.064" starttime="20200504 15:21:23.620"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20200504 11:58:47.799" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20200504 11:58:47.799" starttime="20200504 11:58:44.797"></status>
+<msg timestamp="20200504 15:21:27.069" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20200504 15:21:27.069" starttime="20200504 15:21:24.066"></status>
 </kw>
 <kw name="Click LoginBtn" library="Common_Login">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -79,18 +79,18 @@
 <arguments>
 <arg>xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/button</arg>
 </arguments>
-<msg timestamp="20200504 11:58:47.800" level="INFO">Clicking button 'xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/button'.</msg>
-<status status="PASS" endtime="20200504 11:58:47.972" starttime="20200504 11:58:47.800"></status>
+<msg timestamp="20200504 15:21:27.072" level="INFO">Clicking button 'xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/button'.</msg>
+<status status="PASS" endtime="20200504 15:21:27.329" starttime="20200504 15:21:27.072"></status>
 </kw>
-<status status="PASS" endtime="20200504 11:58:47.972" starttime="20200504 11:58:47.800"></status>
+<status status="PASS" endtime="20200504 15:21:27.329" starttime="20200504 15:21:27.069"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20200504 11:58:52.974" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20200504 11:58:52.975" starttime="20200504 11:58:47.973"></status>
+<msg timestamp="20200504 15:21:32.332" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20200504 15:21:32.333" starttime="20200504 15:21:27.329"></status>
 </kw>
 <kw name="Click Stock" library="Common_Login">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -98,18 +98,18 @@
 <arguments>
 <arg>xpath=/html/body/div[2]/nav[2]/div/div[3]/div[1]/ul/li[2]/a</arg>
 </arguments>
-<msg timestamp="20200504 11:58:52.978" level="INFO">Clicking element 'xpath=/html/body/div[2]/nav[2]/div/div[3]/div[1]/ul/li[2]/a'.</msg>
-<status status="PASS" endtime="20200504 11:58:56.644" starttime="20200504 11:58:52.978"></status>
+<msg timestamp="20200504 15:21:32.337" level="INFO">Clicking element 'xpath=/html/body/div[2]/nav[2]/div/div[3]/div[1]/ul/li[2]/a'.</msg>
+<status status="PASS" endtime="20200504 15:21:49.536" starttime="20200504 15:21:32.336"></status>
 </kw>
-<status status="PASS" endtime="20200504 11:58:56.644" starttime="20200504 11:58:52.977"></status>
+<status status="PASS" endtime="20200504 15:21:49.538" starttime="20200504 15:21:32.335"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20200504 11:58:59.646" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20200504 11:58:59.647" starttime="20200504 11:58:56.645"></status>
+<msg timestamp="20200504 15:21:52.539" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20200504 15:21:52.539" starttime="20200504 15:21:49.539"></status>
 </kw>
 <kw name="Click RTM" library="Common_Login">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -117,24 +117,34 @@
 <arguments>
 <arg>xpath=/html/body/div[2]/nav[2]/div/div[3]/div[1]/ul/li[2]/div/a[1]</arg>
 </arguments>
-<msg timestamp="20200504 11:58:59.651" level="INFO">Clicking element 'xpath=/html/body/div[2]/nav[2]/div/div[3]/div[1]/ul/li[2]/div/a[1]'.</msg>
-<status status="PASS" endtime="20200504 11:59:02.047" starttime="20200504 11:58:59.650"></status>
+<msg timestamp="20200504 15:21:52.542" level="INFO">Clicking element 'xpath=/html/body/div[2]/nav[2]/div/div[3]/div[1]/ul/li[2]/div/a[1]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200504 15:21:54.605" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200504 15:21:54.605" starttime="20200504 15:21:53.656"></status>
 </kw>
-<status status="PASS" endtime="20200504 11:59:02.048" starttime="20200504 11:58:59.648"></status>
+<msg timestamp="20200504 15:21:54.690" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="dropdown-item" href="/Stock/RealTimeMonitoring"&gt;...&lt;/a&gt; is not clickable at point (640, 73). Other element would receive the click: &lt;img style="border-radius: 10px 10px 0px 0px;" data-ng-src="https://storage.investagrams.com/files/Showman/46/DP/46_1585103473.jpg" class="w-100 h-100" src="https://storage.investagrams.com/files/Showman/46/DP/46_1585103473.jpg"&gt;
+  (Session info: chrome=81.0.4044.122)
+</msg>
+<status status="FAIL" endtime="20200504 15:21:54.690" starttime="20200504 15:21:52.542"></status>
 </kw>
-<status status="PASS" endtime="20200504 11:59:02.051" critical="yes" starttime="20200504 11:58:31.566"></status>
+<status status="FAIL" endtime="20200504 15:21:54.690" starttime="20200504 15:21:52.541"></status>
+</kw>
+<status status="FAIL" endtime="20200504 15:21:54.691" critical="yes" starttime="20200504 15:21:06.153">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="dropdown-item" href="/Stock/RealTimeMonitoring"&gt;...&lt;/a&gt; is not clickable at point (640, 73). Other element would receive the click: &lt;img style="border-radius: 10px 10px 0px 0px;" data-ng-src="https://storage.investagrams.com/files/Showman/46/DP/46_1585103473.jpg" class="w-100 h-100" src="https://storage.investagrams.com/files/Showman/46/DP/46_1585103473.jpg"&gt;
+  (Session info: chrome=81.0.4044.122)
+</status>
 </test>
-<status status="PASS" endtime="20200504 11:59:02.053" starttime="20200504 11:58:30.937"></status>
+<status status="FAIL" endtime="20200504 15:21:54.694" starttime="20200504 15:21:05.718"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Exercise 1" pass="1">Exercise 1</stat>
+<stat fail="1" id="s1" name="Exercise 1" pass="0">Exercise 1</stat>
 </suite>
 </statistics>
 <errors>

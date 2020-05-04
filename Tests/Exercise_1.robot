@@ -14,7 +14,7 @@ TC-001
     Click Stock
     Sleep  3s
     Click RTM
-
+    File Get
 
 
 

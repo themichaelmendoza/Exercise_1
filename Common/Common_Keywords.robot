@@ -1,6 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Library  CSVLibrary
+Library  CSVLib
 
 *** Variables ***
 ${Browser}      chrome

@@ -3,8 +3,9 @@ Documentation    Get Data From Table
 Library          Collections
 Library          String
 Library          SeleniumLibrary
-Library          CSVLibrary
-Library          CSVLib
+#Library          CSVLibrary
+#Library          CSVLib
+Library  OperatingSystem
 
 *** Variables ***
 
@@ -27,7 +28,7 @@ Get Column Values
     \       Append To List             ${columnValues}     ${temp}
     END
     Log To Console      columnValues for ${columnName}: ${columnValues}
-    # append to csv file    exer1.csv    ${columnValues}
+    Append To File    Exercise_1/exer1.csv    ${columnName}: ${columnValues}
     [return]            ${columnValues}
 
 

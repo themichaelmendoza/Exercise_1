@@ -1,7 +1,8 @@
 *** Settings ***
 Library  SeleniumLibrary
-Library  CSVLibrary
-Library  CSVLib
+#Library  CSVLibrary
+#Library  CSVLib
+Library  OperatingSystem
 
 *** Variables ***
 ${Browser}      chrome

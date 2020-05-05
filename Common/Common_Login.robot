@@ -1,7 +1,8 @@
 *** Settings ***
 Library  SeleniumLibrary
-Library  CSVLibrary
-Library  CSVLib
+#Library  CSVLibrary
+#Library  CSVLib
+Library  OperatingSystem
 
 *** Variables ***
 ${LoginBtn}         xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/button

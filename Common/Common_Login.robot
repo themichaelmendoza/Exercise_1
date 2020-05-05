@@ -1,5 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
+Library  CSVLibrary
 
 *** Variables ***
 ${LoginBtn}         xpath=/html/body/div[4]/div[2]/div/div[1]/div/div/div[2]/form/button
@@ -21,7 +22,7 @@ Enter Username
     Input Text                        ${Username_TxtBox}    ${username}
 
 Enter Password
-    [Arguments]  ${password}
+    [Arguments]                         ${password}
     Wait Until Page Contains Element    ${Password_TxtBox}
     Input Password                      ${Password_TxtBox}  ${password}
 
